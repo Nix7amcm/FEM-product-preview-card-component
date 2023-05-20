@@ -1,0 +1,51 @@
+:root {
+  /*_____ backgrounds _____*/
+  --bg-body: hsl(30, 38%, 92%);
+  --bg-card: hsl(0, 0%, 100%);
+  --bg-btn: hsl(158, 36%, 37%);
+  --bg-btn-hover: hsl(158, 42%, 18%);
+  
+  /*_____ text _____*/
+  --text-df-grey: hsl(228, 12%, 48%);
+  --text-h1: hsl(212, 21%, 14%);
+  --text-sub: hsl(228, 12%, 48%);
+  --text-p: hsl(228, 12%, 48%);
+  --text-b-price: hsl(158, 36%, 37%);
+  --text-s-price: hsl(228, 12%, 48%);
+  --text-btn: hsl(0, 0%, 100%);
+
+  /*_____ font-family _____*/
+  --f-h1: font-family: 'Fraunces', ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --f-df: font-family: 'Montserrat', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  
+  /*_____ font-weight _____*/
+  --fw-df: 500;
+  --fw-h1: 700;
+  --fw-sub: 500;
+  --fw-p: 500;
+  --fw-b-price: 700;
+  --fw-s-price: 500;
+  --fw-btn: 700;
+  
+  /*_____ font-size _____*/
+  --fs-df: .875rem;
+  --fs-h1: 2rem;
+  --fs-sub: .75rem;
+  --fs-p: .875rem;
+  --fs-b-price: 2rem;
+  --fs-s-price: .8125rem;
+  --fs-btn: 14px;
+
+  /*_____ line-height _____*/
+  --lh-df: 1.4375rem;
+  --lh-h1: 2rem;
+  --lh-sub: .9144rem;
+  --lh-p: 1.4375rem;
+  --lh-b-price: 2rem;
+  --lh-s-price: 1.4375rem;
+  --lh-btn: 17.07px;
+
+  /*_____ letter-spacing _____*/
+  --ls-sub: .3125rem;
+
+}
