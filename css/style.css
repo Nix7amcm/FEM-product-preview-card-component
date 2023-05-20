@@ -20,7 +20,9 @@ svg {
 body {
   display: grid;
   place-items: center;
+  align-content: center;
   min-height: 100vh;
+  padding: 1.75rem 1rem;
   font-family: var(--f-df);
   font-size: var(--fs-df);
   background: var(--bg-body);
@@ -28,4 +30,212 @@ body {
 
 @media (max-width: 600px) {
   body {}
+}
+
+
+/*_____ HEADER-HIDDEN _____*/
+
+.sr-only {
+  /*@ https://tailwindcss.com/docs/screen-readers#screen-reader-only-elements */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+
+/*_____ TYPOGRAPHY _____*/
+
+.subtitle {
+  margin-bottom: 1.25rem;
+  color: var(--text-sub);
+  font-size: var(--fs-sub);
+  font-weight: var(--fw-sub);
+  line-height: var(--lh-sub);
+  letter-spacing: var(--ls-sub);
+  text-transform: uppercase;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  color: var(--text-h2);
+  font-family: var(--f-h2);
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-h2);
+  line-height: var(--lh-h2);
+}
+
+p {
+  margin-bottom: 1.8125rem;
+  color: var(--text-p);
+  font-size: var(--fs-p);
+  font-weight: var(--fw-p);
+  line-height: var(--lh-p);
+}
+
+.big-price {
+  color: var(--text-b-price);
+  font-family: var(--f-h2);
+  font-size: var(--fs-b-price);
+  font-weight: var(--fw-b-price);
+  line-height: var(--lh-b-price);
+}
+
+.small-price {
+  color: var(--text-s-price);
+  font-size: var(--fs-s-price);
+  font-weight: var(--fw-s-price);
+  line-height: var(--lh-s-price);
+  text-decoration: line-through;
+}
+
+@media (max-width: 600px) {
+  .subtitle {
+    margin-bottom: .75rem;
+  }
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin-bottom: 1.5rem;
+  }
+
+}
+
+
+/*_____ LAYOUT_____*/
+
+.product {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 37.5rem;
+  min-height: 28.125rem;
+  background: var(--bg-card);
+  border-radius: .625rem;
+}
+
+@media (max-width: 600px) {
+  .product {
+    display: flex;
+    flex-direction: column;
+    max-width: 21.4375rem;
+    min-height: 38.1875rem;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+@media (max-width: 600px) {
+  .info {
+    padding: 1.5rem;
+  }
+}
+
+
+/*_____ IMAGE _____*/
+
+.image .mobile {
+  display: none;
+}
+
+.image .desktop {
+  width: 100%;
+  height: 100%;
+  border-radius: .625rem 0 0 .625rem;
+}
+
+@media (max-width: 600px) {
+  .image .desktop {
+    display: none;
+  }
+
+  .image .mobile {
+    display: block;
+    border-radius: .625rem .625rem 0 0;
+  }
+}
+
+
+/*_____ PRICES _____*/
+
+.price-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.1875rem;
+  margin-bottom: 1.875rem;
+}
+
+@media (max-width: 600px) {
+  .price-wrap {
+    margin-bottom: 1.25rem;
+  }
+}
+
+
+/*_____ BUTTON _____*/
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .7256rem;
+  width: 14.75rem;
+  height: 3rem;
+  margin: auto;
+  background: var(--bg-btn);
+  border: none;
+  border-radius: .5rem;
+  color: var(--text-btn);
+  font-size: var(--fs-btn);
+  font-weight: var(--fw-btn);
+  line-height: var(--lh-btn);
+}
+
+.btn:is(:hover, :focus-visible) {
+  background: var(--bg-btn-hover);
+  cursor: pointer;
+}
+
+.btn:active {
+  box-shadow: 0px 0px 8px 1px hsl(228, 12%, 48%);
+}
+
+@media (max-width: 600px) {
+  .btn {
+    width: 18.4375rem;
+  }
+}
+
+
+/*_____ FOOTER _____*/
+
+footer {
+  color: var(--text-footer);
+  font-size: .6875rem;
+  text-align: center;
+}
+
+footer a {
+  color: var(--text-footer-a);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--text-footer-a-hov);
+}
+
+footer a:visited {
+  color: var(--text-footer-a-vis);
 }
