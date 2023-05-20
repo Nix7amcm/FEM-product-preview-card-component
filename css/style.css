@@ -22,7 +22,6 @@ body {
   place-items: center;
   align-content: center;
   min-height: 100vh;
-  padding: 1.75rem 1rem;
   font-family: var(--f-df);
   font-size: var(--fs-df);
   background: var(--bg-body);
@@ -116,7 +115,7 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 37.5rem;
-  min-height: 28.125rem;
+  max-height: 28.125rem;
   background: var(--bg-card);
   border-radius: .625rem;
 }
@@ -126,7 +125,7 @@ p {
     display: flex;
     flex-direction: column;
     max-width: 21.4375rem;
-    min-height: 38.1875rem;
+    max-height: 38.1875rem;
   }
 }
 
